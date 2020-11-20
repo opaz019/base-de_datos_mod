@@ -1,8 +1,6 @@
 #¿Qué cliente realizó la compra más cara?
 
 prueba=# SELECT cliente.nombre_cliente, factura.subtotal FROM cliente INNER JOIN factura ON cliente.id_cliente = factura.id_cliente 
-where 
-
 ORDER BY factura.subtotal DESC LIMIT 1;
  nombre_cliente | subtotal
 ----------------+----------
